@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дарья Буланова](https://up.htmlacademy.ru/htmlcss/22/user/702173).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Сабурова](https://htmlacademy.ru/profile/goodwill_darina)
 
 ---
 
