@@ -176,15 +176,29 @@
   </footer>
 
   <section class="modal-map">
-    <img src="img/map.png" alt="Карта офиса">
+    <img src="img/map.png" alt="Адрес офиса:Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <span class="modal-close">x</span>
   </section>
 
   <div class="modal-form">
     <b>Напишите нам</b>
-    <form class="user" method="post"
-          action="https://echo.htmlacademy.ru">
+    <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-letter">Текст письма:</label>
+        <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
   </div>
 </body>
 
