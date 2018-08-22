@@ -47,6 +47,7 @@
     </nav>
   </header>
   <main>
+    <h2 class="visually-hidden">Фильтр</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость</legend>
@@ -63,19 +64,19 @@
           <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">
               Адаптивная
-            </label>
+          </label>
         </p>
         <p>
           <input type="radio" name="grid" value="fix" id="filter-fix">
           <label for="filter-fix">
               Фиксированная
-            </label>
+          </label>
         </p>
         <p>
           <input type="radio" name="grid" value="rubber" id="filter-rubber">
           <label for="filter-rubber">
               Резиновая
-            </label>
+          </label>
         </p>
       </fieldset>
       <fieldset>
@@ -84,13 +85,13 @@
           <input type="checkbox" name="slider" id="filter-slider" checked>
           <label for="filter-slider">
               Слайдер
-            </label>
+          </label>
         </p>
         <p>
           <input type="checkbox" name="adavantage" id="filter-advantage">
           <label for="filter-advantage">
               Блок преимуществ
-            </label>
+          </label>
         </p>
         <p>
           <input type="checkbox" name="news" id="filter-news" checked>
@@ -102,19 +103,20 @@
           <input type="checkbox" name="gallery" id="filter-gallery">
           <label for="filter-gallery">
               Галерея
-            </label>
+          </label>
         </p>
         <p>
           <input type="checkbox" name="cart" id="filter-cart">
           <label for="filter-cart">
               Корзина
-            </label>
+          </label>
         </p>
       </fieldset>
       <button type="submit">Показать</button>
     </form>
 
     <section class="center">
+      <h3 class="visually-hidden">Сортировка</h3>
       <b>Сортировать</b>
       <ul class="sort">
         <li class="sort-item">
@@ -145,6 +147,7 @@
       </ul>
     </section>
     <section class="clients">
+      <h3 class="visually-hidden">Клиенты</h3>
       <article class="client">
         <a href="sedona.html"><h3>Sedona</h3></a>
         <img src="img/img-sedona.jpg" alt="сайт Sedona">
@@ -192,19 +195,22 @@
 
   </main>
   <footer class="main-footer">
-    <img src="map.png" alt="карта">
+    <h3 class="visually-hidden">Блок контактов</h3>
+    <a class="map" href="#">
+     <img src="map.png" alt="карта">
+    </a>
     <p class="footer-contacts">
       <b>NЁRDS DESIGN STUDIO</b> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
     </p>
-    <button class="button write" href="#">Напишите нам</button>
-
+    <a class="write" href="#">
+      Напишите нам
+    </a>
     <section class="social">
       <div class="footer-social">
         <a class="social-button" href="#">VK</a>
         <a class="social-button" href="#">Facebook</a>
         <a class="social-button" href="#">Instagram</a>
       </div>
-
       <div class="promote">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей</p>
@@ -214,7 +220,7 @@
 
   <section class="modal-map">
     <img src="img/map.png" alt="Адрес офиса:Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <h3 class="visually-hidden">Как до нас добраться</h3>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
