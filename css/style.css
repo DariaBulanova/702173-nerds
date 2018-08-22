@@ -1,11 +1,59 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: black;
   text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #696969;
+}
+
+.main-navigation {
+  background-color: #f5f5f5;
+}
+ul {
+  list-style: none;
+}
+.main-navigation a {
+  color: black;
+}
+
+.main-navigation a:hover {
+  color: #F08080;
+}
+.main-navigation a:focus {
+  color: #C0C0C0;
+}
+
+.slider-item b {
+  font-size: 20px;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #FA8072;
+  border: none;
+}
+.button:hover {
+  color:
+}
+.button:active {
+  color:
+}
+
+.information h3 {
+  font-size: 15px;
 }
