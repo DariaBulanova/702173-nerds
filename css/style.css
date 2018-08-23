@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: black;
@@ -15,11 +15,19 @@ a {
 }
 
 .logo:hover {
-  color: #696969;
+  color: #303030;
+}
+
+.logo:active {
+  color: #a6a6a6;
+}
+header h1 {
+  font-size: 55px;
+  line-height: 55px;
 }
 
 .main-navigation {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
 }
 ul {
   list-style: none;
@@ -29,14 +37,15 @@ ul {
 }
 
 .main-navigation a:hover {
-  color: #F08080;
+  color: #fb565a;
 }
 .main-navigation a:focus {
-  color: #C0C0C0;
+  color: #a6a6a6;
 }
 
 .slider-item b {
-  font-size: 20px;
+  font-size: 55px;
+  line-height: 55px;
 }
 .button {
   font: inherit;
@@ -44,16 +53,67 @@ ul {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #FA8072;
+  background-color: #fb565a;
   border: none;
 }
 .button:hover {
-  color:
+  color: #ffffff;
+  background-color: #e74246;
 }
 .button:active {
-  color:
+  color: #e26c6e;
+  background-color: #d7373b;
 }
 
-.information h3 {
-  font-size: 15px;
+legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.advantage h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.advantage p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantage-app {
+  background-color: #00ca74
+}
+.advantage-app:hover {
+  background-color: #00bc6c;
+}
+.advantage-app:active {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.advantage-presentation {
+  background-color: #efc84a;
+}
+.advantage-presentation:hover {
+  background-color: #eab534;
+}
+.advantage-presentation:active {
+  background-color: #e5a722;
+  color: #ebba53;
+}
+
+.information b {
+  font-size: 45px;
+  line-height: 45px;
+}
+.statistic-item b {
+  font-size: 45px;
+  line-height: 10,06px;
+}
+.promote b {
+  font-size: 36px;
+  line-height: 36px;
+}
+.footer-contacts b {
+  font-size: 16px;
+  line-height: 18px;
 }
