@@ -4,9 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -44,29 +41,33 @@
           </a>
         </p>
       </div>
+
     </nav>
   </header>
+
   <main class="container">
+    <h1 class="visually-hidden">Блок слайдера</h1>
     <section class="slider">
       <article class="slider-item">
         <b>Долго,дорого,<br>
         скрупулезно</b>
         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-        <a class="button button-slider" href=#>Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
       </article>
       <article class="slider-item">
         <b>Любим математику как никто другой</b>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="button button-slider" href=#>Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
       </article>
       <article class="slider-item">
         <b>Только ночь,<br>
         только хардкор</b>
         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-        <a class="button button-slider" href=#>Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
       </article>
     </section>
     <section class="advantages">
+      <h2 class="visually-hidden">Блок преимуществ</h2>
       <ul>
         <li class="advantage-item">
           <img src="img/web.png" alt="Веб-сайты">
@@ -88,11 +89,11 @@
         </li>
       </ul>
     </section>
-    </div>
     <section>
       <div class="information">
-        <h3>Мы - маленькая, но гордая
-        дизайн студия из Краснодара</h3>
+        <h2 class="visually-hidden">Блок статистики</h2>
+        <b>Мы - маленькая, но гордая
+        дизайн студия из Краснодара</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
       </div>
       <div class="products">
@@ -108,6 +109,7 @@
             Слайдшоу и видео для корпоративных презентаций
           </li>
         </ul>
+      </div>
     </section>
 
     <div class="statictic">
@@ -131,7 +133,7 @@
         </li>
       </ul>
     </div>
-
+    <h2 class="visually-hidden">Блок партнеров</h2>
     <ul class="partners">
       <li class="partner-item">
         <a class="logo-item" href="htmlacademy.ru/intensive/htmlcss">
@@ -156,6 +158,7 @@
     </ul>
   </main>
   <footer class="main-footer">
+    <h2 class="visually-hidden">Блок контактов</h2>
     <img src="map.png" alt="карта">
     <p class="footer-contacts">
       <b>NЁRDS DESIGN STUDIO</b> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
@@ -177,9 +180,9 @@
   </footer>
 
   <section class="modal-map">
-    <img src="img/map.png" alt="Адрес офиса:Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+    <img src="img/map.png" alt="Карта офиса">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <div class="modal-form">
