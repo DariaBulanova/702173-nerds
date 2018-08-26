@@ -29,7 +29,7 @@ header h1 {
 .main-navigation {
   background-color: #eeeeee;
 }
-ul {
+.main-header ul {
   list-style: none;
 }
 .main-navigation a {
@@ -46,6 +46,22 @@ ul {
 .slider-item b {
   font-size: 55px;
   line-height: 55px;
+}
+.center ul {
+  list-style: none;
+}
+
+.advantages ul {
+  list-style: none;
+}
+.products ul {
+  list-style: none;
+}
+.statistic ul {
+  list-style: none;
+}
+.partners {
+  list-style: none;
 }
 .button {
   font: inherit;
