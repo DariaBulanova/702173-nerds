@@ -159,14 +159,17 @@
     </ul>
   </main>
   <footer class="main-footer">
-    <h2 class="visually-hidden">Контакты</h2>
-    <img src="map.png" alt="карта">
+    <h3 class="visually-hidden">Контакты</h3>
+    <section class="modal-map">
+      <img src="img/map.png" alt="Адрес офиса:Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+      <h3 class="visually-hidden">Как до нас добраться</h3>
+    </section>
     <p class="footer-contacts">
       <b>NЁRDS DESIGN STUDIO</b> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
     </p>
-    <a class="button write" href="write-form">
-     Напишите нам
-   </a>
+    <a class=" button write" href="#">
+      Напишите нам
+    </a>
     <section class="social">
       <div class="footer-social">
         <a class="social-button" href="#">VK</a>
@@ -179,12 +182,6 @@
       </div>
     </section>
   </footer>
-
-  <section class="modal-map">
-    <img src="img/map.png" alt="Адрес офиса:Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
-  </section>
 
   <div class="modal-form">
     <b>Напишите нам</b>
@@ -201,7 +198,7 @@
         <label for="user-letter">Текст письма:</label>
         <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
       </p>
-      <button type="submit">Отправить</button>
+      <button type="submit" class="button">Отправить</button>
       <button class="modal-close" type="button">Закрыть</button>
     </form>
   </div>

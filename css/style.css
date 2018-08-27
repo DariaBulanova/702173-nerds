@@ -63,6 +63,23 @@ header h1 {
 .partners {
   list-style: none;
 }
+
+.center b {
+  font-size: 18px;
+  line-height: 18px;
+}
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #e5e5e5;
+}
+
+.sort-item a:hover {
+  color: #adadad;
+}
+.sort-item a:focus {
+  color: #000000;
+}
 .button {
   font: inherit;
   text-align: center;
@@ -81,11 +98,56 @@ header h1 {
   background-color: #d7373b;
 }
 
+.button-show {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.button-show:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.button-show:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: 10px;
+}
+
 legend {
   font-size: 18px;
   line-height: 30px;
 }
 
+.fieldset p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #282136;
+}
+
+.fielset p:hover {
+  color: #333333;
+}
+
+.fielset p:active {
+  color: #ededed;
+}
+
+.paginator a {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.paginator a:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.paginator a:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: 10px;
+}
 .advantage h3 {
   font-size: 24px;
   line-height: 30px;
@@ -129,7 +191,29 @@ legend {
   font-size: 36px;
   line-height: 36px;
 }
+.client h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.partner-item img:hover {
+  color: #000000;
+}
+.footer-cotacts {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
 .footer-contacts b {
   font-size: 16px;
   line-height: 18px;
+}
+
+.main-header {
+  margin-bottom: 19px;
+  min-height: 132px;
+}
+
+.main-navigation {
+  min-height:
 }
