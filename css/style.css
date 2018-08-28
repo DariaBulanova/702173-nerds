@@ -42,6 +42,26 @@ header h1 {
 .main-navigation a:focus {
   color: #a6a6a6;
 }
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height:
+}
+
+.main-navigation h1 {
+  font-size: 55px;
+  line-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .slider-item b {
   font-size: 55px;
@@ -81,6 +101,15 @@ header h1 {
   color: #000000;
 }
 .button {
+  width: 200px
+  height: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 5px
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -170,6 +199,7 @@ legend {
 
 .advantage-presentation {
   background-color: #efc84a;
+  width: 160px
 }
 .advantage-presentation:hover {
   background-color: #eab534;
@@ -214,6 +244,72 @@ legend {
   min-height: 132px;
 }
 
-.main-navigation {
-  min-height:
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.center {
+  display: flex;]
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sort {
+  display: flex;
+  flex-direction: grow;
+  justify-content: space-around;
+}
+.clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.client {
+  margin-left: : 40px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+.advantages ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.statistic figure {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.statistic h3 {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.statistic ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.statistic b {
+  font-size: 45px;
+  line-height: 10,06px;
+}
+.statistic p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
