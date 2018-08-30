@@ -288,6 +288,8 @@ legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 760px;
+  margin-left: 140px;
 }
 .sort {
   display: flex;
@@ -298,6 +300,7 @@ legend {
 .sort-item {
   margin-right: 28px;
 }
+
 .clients {
   display: flex;
   flex-direction: row;
@@ -371,6 +374,7 @@ legend {
 }
 
 .wrap-filter {
+  width: 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
