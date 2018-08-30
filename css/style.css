@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  min-width: 1200px;
   color: black;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -12,6 +13,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.top {
+  background-color: #eeeeee;
 }
 
 .logo:hover {
@@ -31,6 +36,8 @@ header h1 {
 }
 .main-header ul {
   list-style: none;
+  padding: 0;
+  width: 600px;
 }
 .main-navigation a {
   color: black;
@@ -46,7 +53,6 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-height:
 }
 
 .main-navigation h1 {
@@ -58,9 +64,12 @@ header h1 {
 }
 
 .site-navigation {
+  margin-left: 45px;
+  margin-bottom: 45px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .slider-item b {
@@ -73,6 +82,10 @@ header h1 {
 
 .advantages ul {
   list-style: none;
+  width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 .products ul {
   list-style: none;
@@ -84,9 +97,21 @@ header h1 {
   list-style: none;
 }
 
+.logo-tem {
+  inline-block;
+}
+
 .center b {
   font-size: 18px;
   line-height: 18px;
+}
+
+.sorting {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-left: 39px;
 }
 .sort-item a {
   font-size: 14px;
@@ -101,7 +126,9 @@ header h1 {
   color: #000000;
 }
 .button {
-  width: 200px
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
   height: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -109,7 +136,7 @@ header h1 {
   padding-right: 40px;
   margin-bottom: 30px;
   margin-top: 30px;
-  border-radius: 5px
+  border-radius: 5px;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -130,6 +157,7 @@ header h1 {
 .button-show {
   background-color: #eeeeee;
   color: #000000;
+  text-align: center;
 }
 
 .button-show:hover {
@@ -154,11 +182,11 @@ legend {
   color: #282136;
 }
 
-.fielset p:hover {
+.fieldset p:hover {
   color: #333333;
 }
 
-.fielset p:active {
+.fieldset p:active {
   color: #ededed;
 }
 
@@ -177,17 +205,29 @@ legend {
   color: #959595;
   box-shadow: 10px;
 }
-.advantage h3 {
+.advantages {
+  width: 1160px;
+}
+.advantage-item {
+  width: 300px;
+  margin-left: 50px;
+}
+.advantages h3 {
   font-size: 24px;
   line-height: 30px;
 }
-.advantage p {
+.advantages p {
+  width: 242px;
   font-size: 16px;
   line-height: 24px;
 }
 
+.advantage-web {
+  width: 160px;
+}
 .advantage-app {
-  background-color: #00ca74
+  width: 160px;
+  background-color: #00ca74;
 }
 .advantage-app:hover {
   background-color: #00bc6c;
@@ -199,7 +239,7 @@ legend {
 
 .advantage-presentation {
   background-color: #efc84a;
-  width: 160px
+  width: 160px;
 }
 .advantage-presentation:hover {
   background-color: #eab534;
@@ -215,7 +255,7 @@ legend {
 }
 .statistic-item b {
   font-size: 45px;
-  line-height: 10,06px;
+  line-height: 45px;
 }
 .promote b {
   font-size: 36px;
@@ -244,21 +284,19 @@ legend {
   min-height: 132px;
 }
 
-
-.filter {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
 .center {
-  display: flex;]
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .sort {
   display: flex;
-  flex-direction: grow;
+  flex-direction: row;
   justify-content: space-around;
+}
+
+.sort-item {
+  margin-right: 28px;
 }
 .clients {
   display: flex;
@@ -267,9 +305,14 @@ legend {
 }
 
 .client {
-  margin-left: : 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 33px;
+  width: 350px;
+}
+
+.client-hidden {
+  width: 100%;
 }
 .advantages ul {
   display: flex;
@@ -280,11 +323,9 @@ legend {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.statistic figure {
-  display: flex;
-  justify-content: flex-end;
+  float: rigth;
+  width: 360px;
+  margin: 0 auto;
 }
 
 .statistic h3 {
@@ -301,15 +342,69 @@ legend {
 
 .statistic b {
   font-size: 45px;
-  line-height: 10,06px;
+  line-height: 45px;
 }
 .statistic p {
   font-size: 16px;
   line-height: 18px;
 }
 
+.statistic-item {
+  width: 100px;
+  margin-rigth: 20px;
+  margin-left: 20px;
+}
+
 .partners {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.visually-hidden {
+  display: none;
+}
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.wrap-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  float: left;
+}
+.wrap-information {
+  width: 660px;
+  margin 0 auto;
+  padding: 80px;
+  float: left;
+}
+
+
+.wrap-column {
+  width: 1160px;
+}
+
+.map-container img {
+  width: 100%;
+}
+
+.footer-social a {
+  background-color: #e1e1e1;
+  font-size: 0;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-right: 26px;
+  margin-top: 4px;
+}
+
+.footer-social img {
+  padding-left: 15px;
+  padding-top: 20px;
 }
