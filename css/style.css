@@ -19,16 +19,17 @@ a {
   background-color: #eeeeee;
 }
 
-.logo:hover {
-  color: #303030;
-}
-
-.logo:active {
-  color: #a6a6a6;
-}
 header h1 {
   font-size: 55px;
   line-height: 55px;
+}
+
+.logo img:hover {
+  opacity: 0.7;
+}
+
+.logo img:active {
+  opacity: 0.4;
 }
 
 .main-navigation {
@@ -70,6 +71,15 @@ header h1 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.slider-item {
+  margin-left: 140px;
+}
+
+.wrap-slider {
+  display: flex;
+  flex-direction: row;
 }
 
 .slider-item b {
@@ -249,6 +259,18 @@ legend {
   color: #ebba53;
 }
 
+.partner-item img {
+  opacity: 0.2;
+}
+
+.partner-item img:hover {
+  opacity: 1;
+}
+
+.partner-item img:active {
+  opacity: 0.1;
+}
+
 .information b {
   font-size: 45px;
   line-height: 45px;
@@ -367,6 +389,22 @@ legend {
 .visually-hidden {
   display: none;
 }
+
+.paginator a {
+  display: inline-block;
+  width: 34px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  line-height: 34px;
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ .paginator a.next {
+  width: 260px;
+}
 .container {
   width: 1200px;
   padding: 0 10px;
@@ -384,7 +422,7 @@ legend {
 .wrap-information {
   width: 660px;
   margin 0 auto;
-  padding: 80px;
+  margin-left: 140px;
   float: left;
 }
 
@@ -408,7 +446,18 @@ legend {
   margin-top: 4px;
 }
 
+.footer-social a:hover {
+  background-color: #e74246;
+}
+.footer-social a:active {
+  background-color: #d7373b;
+}
+.footer-social img:active {
+  color: #959595;
+}
+
 .footer-social img {
-  padding-left: 15px;
-  padding-top: 20px;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 25px;
 }
