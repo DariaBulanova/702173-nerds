@@ -12,6 +12,7 @@
 <body>
   <div class="top">
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
         <a class="logo">
         <img src="img/nerds-logo.svg" alt="NЕRDS дизайн-студия">
@@ -46,25 +47,26 @@
           </p>
         </div>
       </nav>
+    </div>
     </header>
     <main class="container">
       <section class="slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <article class="slider-item first">
-          <b>Долго,дорого,<br>
-        скрупулезно</b>
-          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <p class="title">Долго,дорого,<br>
+        скрупулезно</p>
+          <p class="text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <a class="button button-slider" href=#>Узнать больше</a>
         </article>
         <article class="slider-item second">
-          <b>Любим математику как никто другой</b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <p class="title">Любим математику как никто другой</p>
+          <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
           <a class="button button-slider" href=#>Узнать больше</a>
         </article>
         <article class="slider-item third">
-          <b>Только ночь,<br>
-        только хардкор</b>
-          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+          <p class="title">Только ночь,<br>
+        только хардкор</p>
+          <p class="text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
           <a class="button button-slider" href=#>Узнать больше</a>
         </article>
       </section>
@@ -191,6 +193,7 @@
 
   <div class="modal-form">
     <b>Напишите нам</b>
+    <button class="modal-close" type="button">Закрыть</button>
     <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
       <p>
         <label for="user-name">Ваше имя:</label>
@@ -205,7 +208,6 @@
         <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
       </p>
       <button type="submit" class="button">Отправить</button>
-      <button class="modal-close" type="button">Закрыть</button>
     </form>
   </div>
 </body>

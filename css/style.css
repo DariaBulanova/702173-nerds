@@ -81,6 +81,19 @@ a {
   margin-left: 140px;
 }
 
+.slider-item .title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: bold;
+  max-width: 560px;
+}
+
+.slider-item .text {
+  max-width: 480px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 28px;
+}
 .first {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
@@ -356,7 +369,7 @@ legend {
 }
 
 .client {
-  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 33px;
   width: 360px;
 }
@@ -416,7 +429,7 @@ legend {
   display: inline-block;
   width: 34px;
   margin-right: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 80px;
   line-height: 34px;
   background-color: #eeeeee;
   color: #000000;
@@ -435,7 +448,7 @@ legend {
 
 .wrap-filter {
   padding: 0;
-  margin: 0;
+  margin-right: 70px;
   width: 260px;
   display: block;
   float: left;
@@ -444,7 +457,7 @@ legend {
   display: flex;
   flex-direction: column;
   width: 760px;
-  margin: 0;
+  margin-left: 70px;
 }
 .wrap-column {
   margin-top: 60px;
