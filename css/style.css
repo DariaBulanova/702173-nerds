@@ -1,6 +1,6 @@
+/* Общие стили */
 body {
   margin: 0;
-  padding: 0 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -14,178 +14,31 @@ body {
 a {
   text-decoration: none;
 }
-
-.top {
-  background-color: #eeeeee;
-}
-.logo img:hover {
-  opacity: 0.7;
-}
-.logo img:active {
-  opacity: 0.4;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-.main-navigation {
-  background-color: #eeeeee;
+.container {
   width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.block-head {
-  width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 117px;
-  margin-bottom: 60px;
-  background-color: #eeeeee;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.main-header ul {
-  list-style: none;
-  padding: 0;
-  width: 600px;
-}
-.main-navigation a {
-  color: black;
-}
-
-.main-navigation a:hover {
-  color: #fb565a;
-}
-.main-navigation a:focus {
-  color: #a6a6a6;
-}
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
-.site-navigation {
-  margin-left: 45px;
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.slider {
-  width: 1160px;
-  margin-bottom: 40px;
-}
-.slider-item {
-  margin-left: 140px;
-}
-
-.slider-item .title {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: bold;
-  max-width: 560px;
-}
-
-.slider-item .text {
-  max-width: 480px;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 28px;
-}
-.first {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-
-.second {
-  background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-
-.third {
-  background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-
-}
-
-.wrap-slider {
-  display: flex;
-  flex-direction: row;
-}
-
-.slider-item b {
-  font-size: 55px;
-  line-height: 55px;
-}
-.center ul {
-  list-style: none;
-}
-
-.advantages ul {
-  list-style: none;
-  width: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
-
-}
-.products ul {
-  list-style: none;
-}
-.statistic ul {
-  list-style: none;
-}
-.partners {
-  list-style: none;
-}
-
-.logo-tem {
-  inline-block;
-}
-.central {
-  width: 760px;
-  margin-bottom: 30px;
-}
-.central b {
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.sorting {
-  font-size: 0;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
-  margin-left: 39px;
-}
-.sort-item a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #e5e5e5;
-}
-
-.sort-item a:hover {
-  color: #adadad;
-}
-.sort-item a:focus {
-  color: #000000;
-}
+/* Стили кнопок */
 .button {
   display: inline-block;
   vertical-align: middle;
   width: 200px;
+  min-width: 160px;
   height: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
   border-radius: 5px;
@@ -223,42 +76,105 @@ a {
   box-shadow: 10px;
 }
 
-legend {
-  font-size: 18px;
-  line-height: 30px;
-}
+/* Header и навигация */
 
-.fieldset label {
-  font-size: 16px;
-  line-height: 20px;
-  color: #282136;
-}
-
-.fieldset label:hover {
-  color: #333333;
-}
-
-.fieldset label:active {
-  color: #ededed;
-}
-
-.paginator a {
+.top {
   background-color: #eeeeee;
-  color: #000000;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+.logo:active {
+  opacity: 0.4;
 }
 
-.paginator a:hover {
-  background-color: #dfdfdf;
-  color: #000000;
+.main-header {
+  background-color: #eeeeee;
+}
+.main-header ul {
+  list-style: none;
+  padding: 0;
+  width: 600px;
+}
+.main-navigation a {
+  color: black;
 }
 
-.paginator a:active {
-  background-color: #d5d5d5;
-  color: #959595;
-  box-shadow: 10px;
+.main-navigation a:hover {
+  color: #fb565a;
+}
+.main-navigation a:focus {
+  color: #a6a6a6;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.site-navigation {
+  margin-left: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 144px;
+}
+/* Слайдер */
+.slider {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.slider-item {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.slider-item .title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: bold;
+  max-width: 560px;
+}
+.slider-item .text {
+  max-width: 480px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 28px;
+}
+.first {
+  background-image: url("../img/slide1.png");
+}
+.second {
+  background-image: url("../img/slide2.png");
+}
+.third {
+  background-image: url("../img/slide3.png");
+}
+.wrap-slider {
+  display: flex;
+  flex-direction: row;
+}
+.slider-item b {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* Cтили преимуществ */
+.advantages ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 .advantages {
-  width: 1160px;
+  width: 100%;
   margin-bottom: 60px;
   margin-top: 40px;
 }
@@ -275,7 +191,6 @@ legend {
   font-size: 16px;
   line-height: 24px;
 }
-
 .advantage-web {
   width: 160px;
 }
@@ -302,19 +217,24 @@ legend {
   background-color: #e5a722;
   color: #ebba53;
 }
-
-.partner-item img {
-  opacity: 0.2;
+.products ul {
+  list-style: none;
 }
-
-.partner-item img:hover {
-  opacity: 1;
+ /* Стили информации и статистики */
+ .wrap-column {
+   margin-top: 60px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+ }
+ .information {
+   width: 660px;
+   margin: 0 auto;
+   margin-left: 140px;
+ }
+.statistic ul {
+  list-style: none;
 }
-
-.partner-item img:active {
-  opacity: 0.1;
-}
-
 .information b {
   font-size: 45px;
   line-height: 45px;
@@ -323,65 +243,6 @@ legend {
   font-size: 45px;
   line-height: 45px;
 }
-.promote b {
-  font-size: 36px;
-  line-height: 36px;
-}
-.client h3 {
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-}
-.partner-item img:hover {
-  color: #000000;
-}
-.footer-cotacts {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-}
-.footer-contacts b {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.wrap-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 760px;
-  margin-left: 140px;
-}
-.sort {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.sort-item {
-  margin-right: 28px;
-}
-.clients {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.client {
-  margin-right: 20px;
-  margin-bottom: 33px;
-  width: 360px;
-}
-
-.client-hidden {
-  width: 100%;
-}
-.advantages ul {
-  display: flex;
-  flex-direction: row;
-}
-
 .statistic {
   display: flex;
   flex-direction: column;
@@ -415,16 +276,127 @@ legend {
   margin-left: 20px;
 }
 
+/* Cтили лого партнеров */
 .partners {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+.logo-item {
+  display: inline-block;
+}
+.partner-item img {
+  opacity: 0.2;
+}
+.partner-item img:hover {
+  opacity: 1;
+}
+.partner-item img:active {
+  opacity: 0.1;
+}
+/* Cтили фильтра */
 
-.visually-hidden {
-  display: none;
+.fieldset label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #282136;
+}
+.fieldset label:hover {
+  color: #333333;
+}
+.fieldset label:active {
+  color: #ededed;
+}
+.wrap-filter {
+  padding: 0;
+  margin-right: 70px;
+  width: 260px;
+  display: block;
+
+}
+legend {
+  font-size: 18px;
+  line-height: 30px;
 }
 
+/* Стили сортировки */
+.sorting {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-left: 39px;
+}
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #e5e5e5;
+}
+.sort-item a:hover {
+  color: #adadad;
+}
+.sort-item a:focus {
+  color: #000000;
+}
+.sort {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sort-item {
+  margin-right: 28px;
+}
+
+/* Стили карточек клиентов и центральной секции */
+.column {
+  display: flex;
+  flex-direction: row;
+}
+.central {
+  width: 760px;
+  margin-bottom: 30px;
+}
+.central b {
+  font-size: 18px;
+  line-height: 18px;
+}
+.client h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.client {
+  margin-right: 20px;
+  margin-bottom: 33px;
+  width: 360px;
+}
+.client-hidden {
+  width: 100%;
+}
+.central {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  margin-left: 70px;
+}
+
+/* Стили пагинатора */
+.paginator a:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+.paginator a:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: 10px;
+}
 .paginator a {
   display: inline-block;
   width: 34px;
@@ -436,43 +408,11 @@ legend {
   text-transform: uppercase;
   text-align: center;
 }
-
 .paginator a.next {
   width: 260px;
 }
-.container {
-  width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
 
-.wrap-filter {
-  padding: 0;
-  margin-right: 70px;
-  width: 260px;
-  display: block;
-  float: left;
-}
-.central {
-  display: flex;
-  flex-direction: column;
-  width: 760px;
-  margin-left: 70px;
-}
-.wrap-column {
-  margin-top: 60px;
-  width: 1160px;
-  display: flex;
-  flex-direction: row;
-}
-.information {
-  width: 660px;
-  margin 0 auto;
-  margin-left: 140px;
-}
-.map-container img {
-  width: 100%;
-}
+/* Стили футера */
 .footer {
   margin-top: 30px;
 }
@@ -480,7 +420,6 @@ legend {
   display: flex;
   flex-direction: row;
 }
-
 .footer-social a {
   background-color: #e1e1e1;
   font-size: 0;
@@ -491,7 +430,6 @@ legend {
   margin-right: 26px;
   margin-top: 4px;
 }
-
 .footer-social a:hover {
   background-color: #e74246;
 }
@@ -501,9 +439,23 @@ legend {
 .footer-social img:active {
   color: #959595;
 }
-
 .footer-social img {
   display: flex;
   padding-left: 20px;
   padding-top: 25px;
+}
+.footer-cotacts {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.footer-contacts b {
+  font-size: 16px;
+  line-height: 18px;
+}
+.map-container {
+  width: 100%;
+}
+.map-container img {
+  max-width: 100%
 }
