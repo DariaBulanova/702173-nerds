@@ -27,7 +27,6 @@ a {
 
 .container {
   width: 1200px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -349,15 +348,15 @@ h1 {
   display: inline-block;
 }
 
-.partner-item img {
+.partner-item a {
   opacity: 0.2;
 }
 
-.partner-item img:hover {
+.partner-item a:hover {
   opacity: 1;
 }
 
-.partner-item img:active {
+.partner-item a:active {
   opacity: 0.1;
 }
 
@@ -456,10 +455,6 @@ legend {
   margin-right: 20px;
   margin-bottom: 33px;
   width: 360px;
-}
-
-.client-hidden {
-  width: 100%;
 }
 
 .central {
@@ -566,7 +561,6 @@ legend {
   width: 211px;
   background-color: #ffffff;
   text-align: center;
-  display: none;
 }
 
 .modal-form {
