@@ -412,6 +412,10 @@ h1 {
 
 
 /* Cтили лого партнеров */
+
+.wrap-partners {
+  margin-bottom: 50px;
+}
 .wrap-partners:before {
   margin-bottom: 47px;
   content: "";
@@ -724,6 +728,14 @@ label:disabled {
 
 /* Стили футера */
 
+.main-footer:before {
+  margin-bottom: 80px;
+  content: "";
+  display: inline-block;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
 .footer {
   margin-top: 30px;
 }
