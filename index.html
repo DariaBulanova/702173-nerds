@@ -40,6 +40,7 @@
         </ul>
         <div class="user-navigation">
           <p class="cart">
+            <img src="img/cart-icon.svg" alt="корзина">
             <a href="cart.html">
             Корзина
           </a>
@@ -48,6 +49,13 @@
       </nav>
       <section class="slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="container">
+       <h2 class="visually-hidden">Преимущества</h2>
+       <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
         <article class="slider-item first">
           <p class="title">Долго,дорого,<br> скрупулезно
           </p>
@@ -97,7 +105,7 @@
         дизайн студия из Краснодара</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
         <b>Выполняем заказы на разработку</b>
-        <ul>
+        <ul class="products">
           <li class="product-item">
             Веб-сайтов любой сложности
           </li>
@@ -189,25 +197,25 @@
       </section>
     </div>
   </footer>
-    <div class="modal-form">
-      <b>Напишите нам</b>
-      <button class="modal-close" type="button">Закрыть</button>
-      <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="user-letter">Текст письма:</label>
-          <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
-        </p>
-        <button type="submit" class="button">Отправить</button>
-      </form>
-    </div>
+  <div class="modal-form">
+    <b>Напишите нам</b>
+    <button class="modal-close" type="button">Закрыть</button>
+    <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-letter">Текст письма:</label>
+        <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
+      </p>
+      <button type="submit" class="button">Отправить</button>
+    </form>
+  </div>
 </body>
 
 </html>
