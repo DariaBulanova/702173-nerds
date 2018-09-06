@@ -2,10 +2,10 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 500;
   width: 100%;
   min-width: 1200px;
   color: black;
@@ -97,6 +97,7 @@ a {
 
 .main-header {
   background-color: #eeeeee;
+  
 }
 
 .main-header ul {
@@ -118,9 +119,13 @@ a {
 }
 
 .main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .site-navigation {
@@ -132,8 +137,10 @@ a {
   flex-wrap: wrap;
 }
 
-.cart img {
-  padding-right: 26px;
+.cart:after {
+  content: "";
+  background-image: url("../img/cart-icon.svg");
+  background-position: center center;
 }
 
 h1 {
@@ -252,6 +259,7 @@ h1 {
   width: 100%;
   margin-bottom: 60px;
   margin-top: 40px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .advantages ul {
@@ -275,6 +283,7 @@ h1 {
 .advantages h3 {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .advantages p {
@@ -315,23 +324,16 @@ h1 {
   color: #ebba53;
 }
 
-.advantages:after {
-  content: "";
-  display: inline-block;
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
-
 
 /* Стили информации и статистики */
 
 .wrap-column {
   margin-top: 60px;
-  margin-bottom: 80px;
+
   width: 100%;
   display: flex;
   flex-direction: row;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .information {
@@ -350,6 +352,7 @@ h1 {
 .information b {
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
 }
 .products ul {
   list-style: none;
@@ -414,16 +417,11 @@ h1 {
 /* Cтили лого партнеров */
 
 .wrap-partners {
+  margin-top: 47px;
   margin-bottom: 50px;
+  border-bottom: 2px solid #eeeeee;
 }
-.wrap-partners:before {
-  margin-bottom: 47px;
-  content: "";
-  display: inline-block;
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
+
 .partners {
   padding: 0;
   list-style: none;
@@ -516,7 +514,7 @@ h1 {
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto','Arial', sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -562,6 +560,33 @@ label:hover {
 label:disabled {
   color: #ededed;
 }
+.filter-grid .filter-specials input[type="checkbox"],input[type="radio"] {
+    display:none;
+}
+
+.filter-grid input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  top: 50%;
+  background-image: url(../img/radio-on.png);
+  background-repeat: no-repeat;
+}
+
+.filter-specials input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  opacity: 0.4;
+}
+
 .wrap-filter {
   padding: 0;
   margin-right: 70px;
@@ -680,21 +705,34 @@ label:disabled {
 }
 .client-description {
   position: absolute;
-  top: 62%;
+  bottom: 0;
   width: 360px;
   height: 233px;
   background-color: #eeeeee;
   text-align: center;
+  opacity: 0;
+}
+
+.client-description:hover {
+  opacity: 1;
 }
 .client-description h3 {
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
 }
 .client-description p {
-  margin-left: 80px;
-  margin-right: 80px;
+  font-size: 16px;
+  line-height: 18px;
   color: #9c9c9c;
+  text-transform: none;
+  text-align: center;
+  margin-top: 0px;
   width: 200px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 80px;
 }
 
 /* Стили пагинатора */
@@ -713,8 +751,10 @@ label:disabled {
 .paginator a {
   display: inline-block;
   width: 34px;
+  margin-top: 57px;
   margin-right: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  padding: 0;
   line-height: 34px;
   background-color: #eeeeee;
   color: #000000;
@@ -728,20 +768,13 @@ label:disabled {
 
 /* Стили футера */
 
-.main-footer:before {
-  margin-bottom: 80px;
-  content: "";
-  display: inline-block;
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
 .footer {
   margin-top: 30px;
 }
 
 .social {
   display: flex;
+  margin-top: 70px;
 }
 
 .footer-social {
@@ -778,10 +811,15 @@ label:disabled {
   padding-top: 25px;
 }
 
-.footer-cotacts {
+.footer-contacts {
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
+  color: #000000;
+}
+.footer-contacts b {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
 }
 .promote b {
   font-size: 36px;
@@ -794,11 +832,6 @@ label:disabled {
   margin-left: 140px;
 }
 
-.footer-contacts b {
-  font-size: 16px;
-  line-height: 18px;
-}
-
 .map-container {
   text-align: center;
   width: 100%;
@@ -809,19 +842,24 @@ label:disabled {
 }
 
 .container-mark {
+  margin-left: 138px;
   position: absolute;
-  min-height: 240px;
-  width: 240px;
-  background-color: #ffffff;
-  padding: 30px 25px 25px 20px;
+  width: 238px;
+
+  padding: 40px 40px;
+  margin-top: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .modal-form {
-  padding: 0 auto;
+  margin: 0 auto;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 70px;
-  width: 960px;
+  width: 690px;
   height: 594px;
   background-color: #eeeeee;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -838,11 +876,12 @@ label:disabled {
   box-sizing: border-box;
   width: 360px;
   padding: 10px 15px;
-  padding-right: 40px;
+  padding-left: 15px;
   font-size: 16px;
   line-height: 18px;
   color: #a1a1a1;
   border: 2px solid #a1a1a1;
+  border-radius: 3px;
 }
 .write-us input:hover {
   border-color: #b4b9bb;
@@ -851,6 +890,7 @@ label:disabled {
   border-color: #000000;
 }
 .write-us input:invalid {
+  color: #e74246;
   border-color: #e74246;
 }
 
