@@ -91,7 +91,7 @@
         <li class="advantage-item">
           <img src="img/presentation.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
-          <p>Вы даже не подозреваете,насколько вы изумительны!</p>
+          <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
           <a class="button advantage-presentation" href=#>Заказать</a>
         </li>
       </ul>
@@ -101,7 +101,7 @@
         <h3>Мы - маленькая, но гордая
         дизайн студия из Краснодара</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-        <b>Выполняем заказы на разработку</b>
+        <b>Выполняем заказы на разработку:</b>
         <ul class="products">
           <li class="product-item">
             Веб-сайтов любой сложности
@@ -170,9 +170,7 @@
       <div class="container">
         <div class="container-mark">
           <h3 class="visually-hidden">Как до нас добраться</h3>
-          <p class="footer-contacts">
-            <b>NЁRDS DESIGN STUDIO</b> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
-          </p>
+            <h3>NЁRDS DESIGN STUDIO</h3> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
           <a class="button write" href="#">
             Напишите нам
           </a>
@@ -189,7 +187,7 @@
         </div>
         <div class="promote">
           <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </div>
@@ -198,19 +196,23 @@
     <b>Напишите нам</b>
     <button class="modal-close" type="button">Закрыть</button>
     <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="text" name="email" placeholder="email@example.com">
-      </p>
-      <p>
+      <div class="form-area">
+      <div class="form-wrap">
+        <p class="input-write name">
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="input-write email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="input-write letter">
         <label for="user-letter">Текст письма:</label>
-        <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
+        <textarea id="user-letter" rows="5" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit" class="button">Отправить</button>
+      <button type="submit" class="button send">Отправить</button>
+    </div>
     </form>
   </div>
 </body>
