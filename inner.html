@@ -27,7 +27,7 @@
             Клиенты
           </a>
           </li>
-          <li class="site-navigation-item">
+          <li class="site-navigation-item active">
             <a>
             Магазин
           </a>
@@ -40,6 +40,7 @@
         </ul>
         <div class="user-navigation">
           <p class="cart">
+            <img src="img/cart-icon.svg">
             <a href="cart.html">
             Корзина
           </a>
@@ -65,7 +66,7 @@
             </div>
             <div class="price-controls">
               <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
             </div>
           </div>
         </fieldset>
@@ -132,7 +133,7 @@
         <b>Сортировать:</b>
         <ul class="sort-list">
           <li class="sort-item">
-            <a class="sort-price" href=#>
+            <a class="sort-price active" href=#>
             По цене
           </a>
           </li>
@@ -152,7 +153,7 @@
           </a>
           </li>
           <li class="sort-item">
-            <a href=#>
+            <a class="down" href=#>
             <img src="img/icon-up-dir.png" alt="По возрастанию">
           </a>
           </li>
@@ -251,13 +252,12 @@
           </div>
         </article>
       </section>
-
-      <div class="paginator">
-        <a class="active" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a class="next" href="#">Следующая</a>
-      </div>
+      <ul class="paginator">
+        <li class="paginator-item active"><a href="#">1</a></li>
+        <li class="paginator-item"><a href="#">2</a></li>
+        <li class="paginator-item"><a href="#">3</a></li>
+        <li class="paginator-item next"><a href="#">Следующая</a></li>
+      </ul>
     </section>
 
 
@@ -269,7 +269,7 @@
       <div class="container">
         <div class="container-mark">
           <h3 class="visually-hidden">Как до нас добраться</h3>
-          <h3>NЁRDS DESIGN STUDIO</h3> 191186,Санкт-Петербург, ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
+          <h3>NЁRDS DESIGN STUDIO</h3> 191186,Санкт-Петербург,<br> ул. Б.Конюшенная, д.19/8 тел. +7(812)275-75-75
           <a class="button write" href="#">
             Напишите нам
           </a>
@@ -280,9 +280,9 @@
     <div class="container">
       <section class="social">
         <div class="footer-social">
-          <a class="social-vk" href="#"><img src="img/vk-icon.svg"></a>
-          <a class="social-fb" href="#"><img src="img/fb-icon.png"></a>
-          <a class="social-inst" href="#"><img src="img/insta-icon.svg"></a>
+          <a class="social-vk" href="#"></a>
+          <a class="social-fb" href="#"></a>
+          <a class="social-inst" href="#"></a>
         </div>
         <div class="promote">
           <b>Давайте дружить, это выгодно!</b>
