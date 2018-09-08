@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс, внутренняя страница</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -342,6 +342,33 @@
     </div>
     </form>
   </div>
+  <script>
+
+      var link = document.querySelector(".write");
+      var popup = document.querySelector(".modal-form");
+      var close = document.querySelector(".modal-close")
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        var close = popup.querySelector(".modal-close");
+        close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+
+  });
+
+      });
+
+</script>
 </body>
 
 </html>

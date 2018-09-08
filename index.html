@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -55,7 +55,7 @@
           <i></i>
         </div>
         <article class="slider-item first">
-          <p class="title">Долго,дорого,<br> скрупулезно
+          <p class="title">Долго, дорого,<br> скрупулезно
           </p>
           <p class="text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <a class="button button-slider" href=#>Узнать больше</a>
@@ -100,8 +100,8 @@
     <div class="wrap-column">
       <div class="information">
         <h3>Мы - маленькая, но гордая
-        дизайн студия из Краснодара</h3>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+        дизайн студия из Краснодара.</h3>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <b>Выполняем заказы на разработку:</b>
         <ul class="products">
           <li class="product-item">
@@ -122,7 +122,7 @@
           <img src="img/nerds-illustration.png" width="360" height="214" alt="логотип NERDS">
         </figure>
 
-        <h3>С 2004 года любим точность во всем</h3>
+        <h3>С 2004 года любим точность во всем:</h3>
         <ul>
           <li class="statistic-item">
             <b>146%</b>
@@ -244,6 +244,33 @@
     </div>
     </form>
   </div>
+  <script>
+
+      var link = document.querySelector(".write");
+      var popup = document.querySelector(".modal-form");
+      var close = document.querySelector(".modal-close")
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        var close = popup.querySelector(".modal-close");
+        close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+
+  });
+
+      });
+
+</script>
 </body>
 
 </html>
