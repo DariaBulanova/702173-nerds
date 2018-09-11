@@ -89,6 +89,7 @@ a {
 
     color: #000;
     background-color: #eee;
+    width: 260px;
 }
 
 .button-show:hover {
@@ -102,11 +103,12 @@ a {
     box-shadow: 10px;
 }
 .write {
-    width: 185px;
-    margin-top: 23px;
+    width: 180px;
+    margin-top: 15px;
     margin-bottom: 6px;
     padding-top: 13px;
     padding-bottom: 13px;
+    text-align: center;
 }
 /* Header и навигация */
 
@@ -174,7 +176,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-bottom: 19px;
+  margin-right: 10px;
   margin-top: 25px;
   max-width: 440px;
 }
@@ -182,6 +184,7 @@ a {
     width: 440px;
 }
 .user-navigation {
+
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -279,8 +282,10 @@ h1 {
     background-color: inherit;
 }
 .slider-item {
+    padding-top: 15px;
     background-repeat: no-repeat;
     background-size: auto;
+    background-position: right top;
 }
 
 .slider-item .title {
@@ -307,12 +312,12 @@ h1 {
 
     text-transform: none;
 
-    color: #000;
+    color: #000000;
 }
 
 .first {
     background-image: url('../img/slide-first.png');
-    background-position: 93% 18px;
+
 }
 
 .second {
@@ -338,7 +343,7 @@ h1 {
 
 .advantages {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 60px;
 
     border-bottom: 2px solid #eeeeee;
@@ -350,7 +355,7 @@ h1 {
 
     width: 100%;
     padding-left: 20px;
-    margin-top: 80px;
+    margin-top: 75px;
     list-style: none;
 
     justify-content: space-between;
@@ -369,7 +374,8 @@ h1 {
 
     text-transform: uppercase;
 
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 13px;
 }
 
 .advantages p {
@@ -377,6 +383,8 @@ h1 {
     line-height: 24px;
 
     width: 260px;
+    margin: 0;
+    margin-bottom: 25px;
 
     text-transform: none;
 
@@ -388,7 +396,7 @@ h1 {
   width: 100px;
   padding-top: 15px;
   padding-bottom: 12px;
-  margin-top:  12px;
+  margin-top:  10px;
 
 }
 
@@ -462,8 +470,9 @@ h1 {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-
-    margin-bottom: 27px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 40px;
 
     text-transform: none;
 }
@@ -513,6 +522,11 @@ h1 {
 .statistic-item b {
     font-size: 45px;
     line-height: 45px;
+
+}
+.statistic-item span {
+  vertical-align: super;
+  font-size: 25px;
 }
 
 .statistic {
@@ -532,6 +546,7 @@ h1 {
 .statistic h3 {
     font-size: 16px;
     line-height: 24px;
+
     margin-top: 30px;
     margin-left: 20px;
 }
@@ -541,6 +556,9 @@ h1 {
 
     justify-content: flex-end;
     align-items: stretch;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .statistic b {
@@ -570,7 +588,8 @@ h1 {
 
 .wrap-partners {
     padding-left: 20px;
-    margin-top: 45px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     border-bottom: 2px solid #eeeeee;
 }
@@ -611,6 +630,15 @@ h1 {
     border-right-height: 20px;
 }
 
+.partner-item:first-child {
+  margin-top: 20px;
+}
+
+.partner-item:nth-of-type(3) {
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
 .partner-item:last-child {
     padding-right: 0;
 
@@ -626,7 +654,7 @@ h1 {
 }
 .range-filter {
     width: 260px;
-    margin-top: 55px;
+
 }
 .filter-item legend {
     font-size: 18px;
@@ -640,7 +668,7 @@ h1 {
     position: relative;
 
     height: 41px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 15px;
     padding-top: 39px;
     padding-right: 20px;
@@ -716,7 +744,7 @@ h1 {
 .filter-grid {
     font-size: 16px;
 
-    margin-top: 56px;
+    margin-top: 60px;
     padding: 0;
 
     color: #c1c1c1;
@@ -828,7 +856,7 @@ input[type='radio'] {
     display: block;
 
     width: 260px;
-    margin-right: 140px;
+
     padding: 0;
 }
 
@@ -894,7 +922,7 @@ input[type='radio'] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 
@@ -911,19 +939,20 @@ input[type='radio'] {
 }
 
 .clients {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 15px;
 
-    margin-top: 60px;
-    margin-bottom: 89px;
 
-    flex-wrap: wrap;
 }
 
 .client {
-    position: relative;
-  
-    margin-bottom: 33px;
+  margin-top: 35px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .central {
@@ -932,8 +961,8 @@ input[type='radio'] {
 
     width: 760px;
 
-    margin-bottom: 30px;
-    margin-left: 18px;
+
+    margin-left: auto;
 }
 .image-wrap {
     position: relative;
@@ -1034,7 +1063,7 @@ input[type='radio'] {
 
     margin: 0;
     margin-top: 56px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     margin-left: 2px;
     padding: 0;
 
@@ -1059,7 +1088,9 @@ input[type='radio'] {
     background-color: #eee;
 }
 .paginator-item .active a {
-    background-color: #fff;
+  background-color: #ffffff;
+  padding: 13px 18px;
+  border: 3px solid #dbdbdb;
 }
 .paginator-item a:active {
     padding: 16px 21px;
@@ -1076,9 +1107,6 @@ input[type='radio'] {
 
 /* Стили футера */
 
-.main-footer {
-    margin-top: 95px;
-}
 
 .social {
     display: flex;
@@ -1141,8 +1169,9 @@ input[type='radio'] {
 .promote b {
     font-size: 36px;
     font-weight: bolder;
+    text-transform: none;
 
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 
     color: #000;
 }
@@ -1165,13 +1194,23 @@ input[type='radio'] {
     max-width: 100%;
 }
 
+.container-mark:before {
+  content: "";
+    background: url(../img/map-marker.png);
+    position: absolute;
+    width: 231px;
+    height: 190px;
+    top: 40px;
+    left: 670px;
+}
+
 .container-mark {
     position: absolute;
 
     display: flex;
     flex-direction: column;
 
-    width: 255px;
+    width: 250px;
     margin-top: 54px;
     margin-bottom: 54px;
     margin-left: 28px;
@@ -1182,6 +1221,21 @@ input[type='radio'] {
     background: white;
 
     flex-wrap: wrap;
+}
+
+.container-mark h3 {
+  margin-top: 25px;
+  margin-right: 28px;
+  margin-bottom: 20px;
+}
+.container-mark .text {
+  text-transform: none;
+  margin: 0;
+  margin-right: 33px;
+}
+.container-mark .phone {
+  text-transform: none;
+  margin-right: 30px;
 }
 .footer-contacts h3 {
     margin-bottom: 33px;
@@ -1272,6 +1326,8 @@ input[type='radio'] {
     outline: none;
 }
 
+
+
 .input-write:first-child {
     margin-right: 70px;
 }
@@ -1294,6 +1350,25 @@ input[type='radio'] {
 
 .input-write .letter {
     margin-top: 60px;
+}
+
+.input-write input:hover {
+  border-color: #b4b9bb;
+}
+.input-write input:focus {
+  border-color: #000000;
+}
+.input-write input:invalid{
+  border-color: #e74246;
+}
+.input-write textarea:hover {
+  border-color: #b4b9bb;
+}
+.input-write textarea:focus {
+  border-color: #000000;
+}
+.input-write textarea:invalid{
+  border-color: #e74246;
 }
 
 .input-write .name {
