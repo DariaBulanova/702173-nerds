@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
       </nav>
       <section class="slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
-       <div class="slider-controls">
+        <div class="slider-controls">
           <i class="active"></i>
           <i></i>
           <i></i>
@@ -171,7 +172,9 @@
       <div class="container">
         <div class="container-mark">
           <h3 class="visually-hidden">Как до нас добраться</h3>
-            <h3>NЁRDS DESIGN STUDIO</h3> <p class="text">191186,Санкт-Петербург,<br> ул. Б.Конюшенная, д.19/8</p> <p class="phone">тел. +7(812)275-75-75</p>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="text">191186,Санкт-Петербург,<br> ул. Б.Конюшенная, д.19/8</p>
+          <p class="phone">тел. +7(812)275-75-75</p>
           <a class="button write" href="#">
             Напишите нам
           </a>
@@ -198,51 +201,24 @@
     <button class="modal-close" type="button">Закрыть</button>
     <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
       <div class="form-area">
-      <div class="form-wrap">
-        <p class="input-write name">
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        <div class="form-wrap">
+          <p class="input-write name">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="input-write email">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="input-write letter">
+          <label for="user-letter">Текст письма:</label>
+          <textarea id="user-letter" rows="5" placeholder="В свободной форме"></textarea>
         </p>
-        <p class="input-write email">
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="text" name="email" placeholder="email@example.com">
-        </p>
+        <button type="submit" class="button send">Отправить</button>
       </div>
-      <p class="input-write letter">
-        <label for="user-letter">Текст письма:</label>
-        <textarea id="user-letter" rows="5" placeholder="В свободной форме"></textarea>
-      </p>
-      <button type="submit" class="button send">Отправить</button>
-    </div>
     </form>
   </div>
-  <script>
-
-      var link = document.querySelector(".write");
-      var popup = document.querySelector(".modal-form");
-      var close = document.querySelector(".modal-close")
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        var close = popup.querySelector(".modal-close");
-        close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-    }
-  });
-
-  });
-
-      });
-
-</script>
 </body>
 
 </html>
