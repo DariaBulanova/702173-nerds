@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   width: 100%;
   min-width: 1200px;
@@ -109,6 +109,13 @@ a {
   padding-bottom: 13px;
   text-align: center;
 }
+.price {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 /* Header и навигация */
 
@@ -168,7 +175,7 @@ a {
   margin-top: 25px;
   margin-right: 50px;
   padding: 0;
-  width: 440;
+  width: 440px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -401,7 +408,7 @@ h1 {
   flex-direction: row;
   width: 100%;
   margin-top: 30px;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
   border-bottom: 2px solid #eeeeee;
   justify-content: space-between;
 }
@@ -486,12 +493,14 @@ h1 {
 
 .statistic figure {
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .statistic h3 {
   font-size: 16px;
   line-height: 24px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 
@@ -748,6 +757,7 @@ h1 {
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 3px;
 }
 
 .filter-specials p {
@@ -873,7 +883,7 @@ h1 {
 }
 
 .up {
-  padding-right: 18px;
+  padding-right: 20px;
 }
 
 /* Стили карточек клиентов и центральной секции */
@@ -898,7 +908,7 @@ h1 {
 
 .clients {
   display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -975,8 +985,9 @@ h1 {
 }
 .client-description h3 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 30px;
+  padding-top: 10px;
 }
 .client-description h3:hover {
   color: #b2b1b1;
@@ -985,7 +996,7 @@ h1 {
 .client-description p {
   font-size: 16px;
   line-height: 18px;
-  width: 240px;
+  width: 200px;
   margin: 0 auto;
   margin-top: 15px;
   text-align: center;
@@ -1005,7 +1016,7 @@ h1 {
   line-height: 50px;
   display: flex;
   margin: 0;
-  margin-top: 60px;
+  margin-top: 58px;
   margin-bottom: 58px;
   margin-left: 2px;
   padding: 0;
@@ -1071,7 +1082,8 @@ h1 {
   display: flex;
   width: 80px;
   height: 80px;
-  margin-right: 7px;
+  margin-right: 4px;
+  margin-left: 4px;
   border-radius: 50%;
   background-color: #e1e1e1;
   background-repeat: no-repeat;
@@ -1123,6 +1135,8 @@ h1 {
 
 .map-container {
   width: 100%;
+  height: 420px;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -1132,7 +1146,7 @@ h1 {
 
 .container-mark:before {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 680px;
   width: 231px;
   height: 190px;
@@ -1146,7 +1160,8 @@ h1 {
   flex-direction: column;
   width: 260px;
   min-height: 250px;
-  margin-top: 60px;
+  margin: 0 auto;
+  margin-top: 50px;
 
   padding: 30px;
   text-align: center;
@@ -1155,18 +1170,21 @@ h1 {
 }
 
 .container-mark h3 {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 20px;
+  margin-right: 17px;
 }
 
 .container-mark .text {
   margin: 0;
   text-transform: none;
+  margin-right: 20px;
 }
 
 .container-mark .phone {
   margin-right: 30px;
   text-transform: none;
+  margin-right: 60px;
 }
 
 .footer-contacts h3 {
