@@ -87,7 +87,7 @@ a {
 .button-show:active {
   color: #959595;
   background-color: #d5d5d5;
-  box-shadow: 10px;
+  box-shadow: 0 0 0 10px;
 }
 
 .write {
@@ -109,12 +109,18 @@ a {
   padding-bottom: 13px;
   text-align: center;
 }
+
 .price {
   width: 200px;
   margin: 0 auto;
   margin-top: 25px;
+  padding-top: 20px;
   padding-left: 0;
   padding-right: 0;
+}
+
+.price a {
+  padding-top: 40px;
 }
 
 /* Header и навигация */
@@ -827,6 +833,7 @@ h1 {
 
 .sort-item a {
   font-size: 14px;
+  font-weight: 100;
   line-height: 18px;
   color: #e5e5e5;
 }
@@ -960,43 +967,53 @@ h1 {
 
 .image-head span {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 7px;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
   vertical-align: middle;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.image-head span:first-child {
+  margin-left: 5px;
 }
 
 .client-description {
   position: absolute;
   bottom: 0;
   overflow: auto;
+  overflow-wrap: break-word;
   width: 360px;
   height: 233px;
   max-height: 233px;
-  text-align: center;
   opacity: 0;
+  text-align: center;
   background-color: #eeeeee;
 }
 
 .client-description:hover {
   opacity: 1;
 }
+
 .client-description h3 {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   padding-top: 10px;
 }
+
 .client-description h3:hover {
   color: #b2b1b1;
 }
 
 .client-description p {
   font-size: 16px;
+  font-weight: 200;
   line-height: 18px;
   width: 200px;
+  height: 35px;
+  overflow: auto;
   margin: 0 auto;
   margin-top: 15px;
   text-align: center;
@@ -1057,8 +1074,8 @@ h1 {
 }
 
 .paginator-item.next a {
-    padding-left: 76px;
-    padding-right: 76px;
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 /* Стили футера */
@@ -1135,23 +1152,22 @@ h1 {
 
 .map-container {
   width: 100%;
-  height: 420px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   text-align: center;
 }
 
-.map-container img {
-  max-width: 100%;
-}
-
 .container-mark:before {
   position: absolute;
-  top: 40px;
+  overflow: auto;
+  top: 39px;
   left: 680px;
   width: 231px;
   height: 190px;
   content: "";
-  background: url("../img/map-marker.png");
+  background-image: url("../img/map-marker.png");
 }
 
 .container-mark {
@@ -1162,29 +1178,35 @@ h1 {
   min-height: 250px;
   margin: 0 auto;
   margin-top: 50px;
-
   padding: 30px;
-  text-align: center;
+  text-align: left;
   background: white;
   flex-wrap: wrap;
 }
 
 .container-mark h3 {
   margin-top: 25px;
-  margin-bottom: 20px;
-  margin-right: 17px;
+  margin-left: 20px;
 }
 
 .container-mark .text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
   margin: 0;
+  margin-top: 7px;
   text-transform: none;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .container-mark .phone {
-  margin-right: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
   text-transform: none;
-  margin-right: 60px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-contacts h3 {
@@ -1198,27 +1220,27 @@ h1 {
 }
 
 .modal-form {
-    padding-top: 75px;
-    padding-left: 20px;
-    position: fixed;
-    width: 960px;
-    background: white;
-    left: 50%;
-    top: 50%;
-    margin-left: -470px;
-    margin-top: -300px;
-    box-shadow: 0 25px 100px 0 black;
-    z-index: 100;
-    display: none;
+  padding-top: 75px;
+  padding-left: 20px;
+  position: fixed;
+  width: 960px;
+  background: white;
+  left: 50%;
+  top: 50%;
+  margin-left: -470px;
+  margin-top: -300px;
+  box-shadow: 0 25px 100px 0 black;
+  z-index: 100;
+  display: none;
 }
 
 .modal-form b {
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 45px;
-    margin-top: 0;
-    margin-left: 50px;
-    text-transform: none;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-top: 0;
+  margin-left: 50px;
+  text-transform: none;
 }
 
 .modal-show {
