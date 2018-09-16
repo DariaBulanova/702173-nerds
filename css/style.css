@@ -31,6 +31,10 @@ a {
   padding: 0 20px;
 }
 
+main {
+  display: block;
+}
+
 /* Стили кнопок */
 
 .button {
@@ -114,7 +118,7 @@ a {
 .price {
   width: 200px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 14px;
   margin-left: 3px;
   padding: 16px 0;
   padding-left: 0;
@@ -644,7 +648,6 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 40px;
   text-transform: uppercase;
 }
 
@@ -1015,7 +1018,7 @@ h1 {
   font-weight: 200;
   line-height: 18px;
   width: 200px;
-  height: 45px;
+  height: 50px;
   overflow: auto;
   margin: 0 auto;
   margin-top: 15px;
