@@ -87,16 +87,17 @@ a {
 .button-show:active {
   color: #959595;
   background-color: #d5d5d5;
-  box-shadow: 0 0 0 10px;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .write {
   width: 160px;
-  margin-top: 15px;
-  margin-bottom: 6px;
+  margin-top: 8px;
+  margin-bottom: 7px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 13px;
+  padding: 30px;
+  padding-top: 20px;
   padding-bottom: 13px;
   text-align: center;
 }
@@ -113,8 +114,9 @@ a {
 .price {
   width: 200px;
   margin: 0 auto;
-  margin-top: 25px;
-  padding-top: 20px;
+  margin-top: 24px;
+  margin-left: 3px;
+  padding: 16px 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -544,7 +546,7 @@ h1 {
 
 .wrap-partners {
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -915,7 +917,7 @@ h1 {
 
 .clients {
   display: flex;
-  margin-top: 15px;
+  margin-top: 50px;
   padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -923,7 +925,7 @@ h1 {
 
 .client {
   position: relative;
-  margin-top: 35px;
+  margin-bottom: 33px;
   cursor: pointer;
 }
 
@@ -1012,7 +1014,7 @@ h1 {
   font-weight: 200;
   line-height: 18px;
   width: 200px;
-  height: 35px;
+  height: 40px;
   overflow: auto;
   margin: 0 auto;
   margin-top: 15px;
@@ -1033,8 +1035,8 @@ h1 {
   line-height: 50px;
   display: flex;
   margin: 0;
-  margin-top: 58px;
-  margin-bottom: 58px;
+  margin-top: 28px;
+  margin-bottom: 50px;
   margin-left: 2px;
   padding: 0;
   list-style: none;
@@ -1159,17 +1161,6 @@ h1 {
   text-align: center;
 }
 
-.container-mark:before {
-  position: absolute;
-  overflow: auto;
-  top: 39px;
-  left: 680px;
-  width: 231px;
-  height: 190px;
-  content: "";
-  background-image: url("../img/map-marker.png");
-}
-
 .container-mark {
   position: absolute;
   display: flex;
@@ -1177,7 +1168,7 @@ h1 {
   width: 260px;
   min-height: 250px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 30px;
   text-align: left;
   background: white;
