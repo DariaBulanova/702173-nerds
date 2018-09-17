@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс, внутренняя страница</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
-       <img src="img/nerds-logo.svg" alt="NЕRDS дизайн-студия">
+       <img src="img/nerds-logo.svg" width="160" height="65" alt="NЕRDS дизайн-студия">
       </a>
         <ul class="site-navigation">
           <li class="site-navigation-item">
@@ -152,13 +152,13 @@
         <ul class="sort-direction">
           <li class="direction-item up">
             <a href=#>
-            <img src="img/icon-down-dir.png" width="10" height="10" alt="По убыванию">
-          </a>
+              <p class="visually-hidden">сортировка от меньшего к большему</p>
+            </a>
           </li>
           <li class="direction-item down">
             <a class="down" href=#>
-            <img src="img/icon-up-dir.png" width="10" height="10" alt="По возрастанию">
-          </a>
+              <p class="visually-hidden">сортировка от большего к меньшему</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -273,14 +273,14 @@
         <div class="container-mark">
           <h3 class="visually-hidden">Как до нас добраться</h3>
           <h3>NЁRDS DESIGN STUDIO</h3>
-          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="text">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
           <p class="phone">тел. +7 (812) 275-75-75</p>
-          <a class="button write" href="#">
+          <a class="button write" href="writeus.html">
             Напишите нам
           </a>
         </div>
       </div>
-   </section>
+    </section>
     <div class="container">
       <section class="social">
         <div class="footer-social">
@@ -318,7 +318,7 @@
       </div>
     </form>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/min.script.js"></script>
 </body>
 
 </html>

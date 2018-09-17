@@ -41,13 +41,11 @@ main {
   font-size: 16px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: middle;
   width: 200px;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 30px;
+  padding: 16px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -70,7 +68,7 @@ main {
 .button-slider {
   font-size: 16px;
   line-height: 18px;
-  width: 182px;
+  width: 207px;
   height: 10px;
   margin-bottom: 80px;
   padding-bottom: 22px;
@@ -95,14 +93,12 @@ main {
 }
 
 .write {
-  width: 160px;
-  margin-top: 8px;
+  width: 190px;
+  margin-top: 10px;
   margin-bottom: 7px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 30px;
-  padding-top: 20px;
-  padding-bottom: 13px;
+  padding: 16px;
   text-align: center;
 }
 
@@ -118,7 +114,7 @@ main {
 .price {
   width: 200px;
   margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 13px;
   margin-left: 3px;
   padding: 16px 0;
   padding-left: 0;
@@ -349,6 +345,7 @@ h1 {
   padding: 0;
   list-style: none;
   justify-content: flex-start;
+  overflow: auto;
 }
 
 .advantage-item {
@@ -381,10 +378,10 @@ h1 {
 
 .advantage {
   display: inline-block;
-  width: 100px;
+  vertical-align: middle;
+  width: 130px;
   margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding: 16px;
 }
 
 .advantage-app {
@@ -562,7 +559,6 @@ h1 {
   padding: 0;
   list-style: none;
   text-align: center;
-
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
@@ -886,12 +882,25 @@ h1 {
   list-style: none;
 }
 
-.direction-item:hover {
-  opacity: .5;
+.direction-item.up a:after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 420px;
+  background: url("../img/icon-up-dir.png");
+  transform: rotate(180deg);
 }
 
-.direction-item .down {
-  opacity: .5;
+.direction-item.down a:after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 420px;
+  left: 1360px;
+  background: url("../img/icon-up-dir.png");
+  opacity: 0.2;
 }
 
 .up {
@@ -1017,11 +1026,11 @@ h1 {
   font-size: 16px;
   font-weight: 200;
   line-height: 18px;
-  width: 227px;
-  height: 35px;
+  width: 240px;
+  height: 50px;
   overflow: auto;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
   text-transform: none;
   color: #9c9c9c;
@@ -1163,7 +1172,9 @@ h1 {
   padding: 0;
   overflow: hidden;
   text-align: center;
+  background-color: #ffffff;
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
   background-position: 50%;
 }
 
@@ -1179,6 +1190,7 @@ h1 {
   text-align: left;
   background: white;
   flex-wrap: wrap;
+  overflow: auto;
 }
 
 .container-mark h3 {
