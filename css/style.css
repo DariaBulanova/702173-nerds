@@ -888,6 +888,7 @@ h1 {
 }
 
 .sort-direction {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -900,8 +901,8 @@ h1 {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: 420px;
-  left: 1252px;
+  top: 3px;
+  right: 7px;
   background: url("../img/icon-up-dir.png");
   transform: rotate(180deg);
 }
@@ -911,8 +912,8 @@ h1 {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: 420px;
-  left: 1280px;
+  top: 3px;
+  right: -22px;
   background: url("../img/icon-up-dir.png");
   opacity: 0.2;
 }
