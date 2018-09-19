@@ -946,7 +946,7 @@ h1 {
 
 .client {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   cursor: pointer;
 }
 
@@ -1059,7 +1059,7 @@ h1 {
   line-height: 50px;
   display: flex;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 55px;
   padding: 0;
   list-style: none;
